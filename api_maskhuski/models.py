@@ -4,6 +4,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+#Modelo Billeta:
+#Este modelo va a manejar la informacion y contendra las imagen de cada billete. 
 class Billetes(models.Model):
     id_billete = models.AutoField(primary_key=True)
     id_nivel = models.IntegerField()
@@ -14,6 +16,7 @@ class Billetes(models.Model):
         return f'Billete {self.id_billete}'
 
 #Modelo monedas:
+#Este modelo va a manejar la informacion y contendra las imagen de cada moneda.
 
 class Monedas(models.Model):
     id_moneda = models.AutoField(primary_key=True)
